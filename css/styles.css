@@ -1,18 +1,78 @@
+hr {
+  border-top: 4px;
+  border-bottom: 0;
+  border-style: dashed;
+  width: 20%;
+}
+
 body {
-  }
+  background-color: #ABEDD8;
+  border: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.header {
+  background-color: #36BDBF;
+  border-radius: 0 0 20px 20px;
+  margin: 0;
+}
 
 .heading {
-  font-family: cursive;
-  font-size: 4rem;
+  color: #48466D;
+  font-family: 'Yeon Sung', cursive;
+  font-size: 5rem;
   font-weight: bolder;
+  margin: 0;
+  padding-top: 15px;
   text-align: center;
-  color: #001111;
+}
+
+.profile {
+  width: 50%;
+  margin: auto;
+}
+
+.img-para {
+  padding: 5px;
+}
+
+.profile-image {
+  width: 200px;
+  float: left;
+  border-radius: 100%;
+  position: relative;
+  padding: 20px;
 }
 
 .tag-line {
-  font-family: sans-serif;
-  font-size: 1rem;
+  color: #1D54A9;
+  font-family: 'Inconsolata', monospace;
+  font-size: 1.5rem;
   font-weight: bolder;
+  padding-bottom: 10px;
   text-align: center;
-  color: #001111;
+}
+
+.body-heading {
+  color: #3D84A8;
+  font-size: 3rem;
+  padding: 0;
+}
+
+.text {
+  color: inherit;
+  line-height: 1.6;
+  padding-top: 20px;
+}
+
+.footer-btn {
+  text-decoration: none;
+  color: white;
+}
+
+.footer {
+  background-color: #48466D;
 }
