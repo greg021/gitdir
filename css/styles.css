@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+
 body {
   background-color: #eeeeee;
   font-family: 'Kreon', serif;
@@ -20,6 +21,11 @@ h2,h3,img,.nav-btn,.btn,ul {
   display: inline-block;
   font-style: normal;
   font-weight: normal;
+}
+
+h1::selection,h2::selection,h3::selection,p::selection,li::selection,a::selection {
+  background-color: #ff9999;
+  color: #3d3d3d;
 }
 
 .heading {
