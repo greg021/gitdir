@@ -182,3 +182,160 @@ footer {
 footer div a {
   color: #ddddff;
 }
+
+
+.label {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  line-height: 290px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  color: rgb(93, 93, 93);
+}
+
+.section-heading {
+  width: 100%;
+  text-align: center;
+  height: 90px;
+  font-family: monospace;
+  font-size: 45px;
+  line-height: 90px;
+  background-color:transparent;
+}
+
+.projects {
+  display: block;
+  width: 100%;
+  background-color: rgb(202, 202, 202);
+  padding: 10px;
+}
+
+.color1 {
+  background: #e75252;
+}
+
+.color2 {
+  background: #56c778;
+}
+
+.color3 {
+  background: #34c7cc;
+}
+
+.color4 {
+  background: #b43deb;
+}
+
+.color5 {
+  background: #f1b22a;
+}
+
+.color6 {
+  background: #df3258;
+}
+
+.color7 {
+  background: #00ad74;
+}
+
+.color8 {
+  background: #d8db14;
+}
+
+.grid-3-5 {
+  display: grid;
+  grid-auto-flow: row dense;
+  grid-auto-columns: 1fr;
+  grid-gap: 10px;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+
+.cell {
+  position: relative;
+  display: flex;
+  height: 100%;
+  min-height: 290px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+
+.v1 {
+  grid-column-start: 1;
+  grid-column-end: span 2;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}
+
+
+
+.v2 {
+  grid-column-start: span 3;
+  grid-column-end: 6;
+  grid-row-start: span 2;
+}
+
+
+.v3 {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}
+
+.v4 {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}
+
+@media (max-width: 1000px) {
+  .grid-3-5 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .v1 {
+    grid-column-end: span 1;
+  }
+
+  .v2 {
+    grid-column-start: span 2;
+    grid-column-end: 4;
+  }
+
+  .v4 {
+    grid-column-start: span 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-3-5 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .v2 {
+    grid-column-start: span 1;
+    grid-column-end: 3;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-3-5 {
+    grid-template-columns: 1fr;
+  }
+
+  .v1,
+  .v2,
+  .v3,
+  .v4 {
+    grid-column-start: span 1;
+    grid-column-end: span 1;
+    grid-row-start: span 1;
+    grid-row-end: span 1;
+  }
+}
