@@ -1,3 +1,7 @@
+## V0.1.3
+
+@hotfix - Desktop NavBar Fix.<br />
+
 ## V0.1.2
 
 Added a responsive header.<br />

@@ -10,11 +10,8 @@ body {
   font-family: 'Kreon', serif;
 }
 
-h2,
 h3,
-img,
-.nav-btn,
-ul {
+img, {
   display: inline-block;
   font-style: normal;
   font-weight: normal;
@@ -110,27 +107,38 @@ header {
 /****** NAVIGATION SECTION *****/
 
 nav {
+  display: grid;
+  grid-template-columns: 1fr 1.8fr;
   position: sticky;
   top: 0;
-  width: 75%;
+  max-width: 1280px;
   margin: 30px auto;
-  padding: 15px;
+  padding: 10px;
   background-color: #555555;
   z-index: 9999;
+  box-shadow: 0 3px 20px  #555555;
 }
 
-h2 {
-  padding: 0.15em .7em;
+nav ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
+nav h2 {
+  display: inline-block;
+  padding: 0.1em .55em;
   background-color: #bbbbbb;
-  border-radius: 20px;
-  font-size: 3.125em;
+  border-radius: 10px;
+  font-size: clamp(24px, 2.65vw, 36px);
+  cursor: default;
 }
 
 li a {
-  font-size: 1.3em;
+  font-size: clamp(1.15rem, 1.8vw, 24px);
   color: #eeeeee;
   text-decoration: none;
-  margin-left: 4em;
 }
 
 li a:hover {
@@ -144,8 +152,14 @@ li a:hover {
 
 .about {
   display: grid;
-  width: 70%;
+  max-width: 1280px;
   margin: auto;
+  background: repeating-linear-gradient(180deg,
+  #eeeeee 0px,
+  #c2c2c2 50%,
+  #eeeeee 100%);
+  padding: 10px;
+  padding-top: 80px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
@@ -159,9 +173,8 @@ img {
 }
 
 .about-content {
-  background-color: #f4f4f4;
+  background: #f2f2f2 ;
   padding: 30px;
-  margin-left: 30px;
 }
 
 h3,
@@ -240,9 +253,15 @@ footer div a {
 
 .projects {
   display: block;
-  width: 100%;
-  background-color: rgb(202, 202, 202);
+  max-width: 1280px;
+  background: repeating-linear-gradient(180deg,
+  #f0f0f0 0px,
+  #c2c2c2 100px,
+  #c2c2c2 100%);
   padding: 10px;
+  margin: auto;
+  padding-top: 80px;
+  margin-top: 20px;
 }
 
 .color1 {
