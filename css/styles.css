@@ -11,7 +11,8 @@ body {
 }
 
 h3,
-img, {
+img,
+  {
   display: inline-block;
   font-style: normal;
   font-weight: normal;
@@ -23,8 +24,7 @@ h3::selection,
 p::selection,
 li::selection,
 a::selection {
-  background-color: #ff9999;
-  color: #3d3d3d;
+  background-color: transparent;
 }
 
 /******* HEADER SECTION ************/
@@ -70,7 +70,9 @@ header {
   color: #222222;
   font-size: clamp(16px, 2.5vw, 28px);
   position: absolute;
-  top: 0;left: 0;right: 0;
+  top: 0;
+  left: 0;
+  right: 0;
   margin: auto;
 }
 
@@ -111,12 +113,12 @@ nav {
   grid-template-columns: 1fr 1.8fr;
   position: sticky;
   top: 0;
-  max-width: 1280px;
+  max-width: 1140px;
   margin: 30px auto;
   padding: 10px;
   background-color: #555555;
   z-index: 9999;
-  box-shadow: 0 3px 20px  #555555;
+  box-shadow: 0 3px 20px #555555;
 }
 
 nav ul {
@@ -152,12 +154,8 @@ li a:hover {
 
 .about {
   display: grid;
-  max-width: 1280px;
+  max-width: 1140px;
   margin: auto;
-  background: repeating-linear-gradient(180deg,
-  #eeeeee 0px,
-  #c2c2c2 50%,
-  #eeeeee 100%);
   padding: 10px;
   padding-top: 80px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -173,8 +171,9 @@ img {
 }
 
 .about-content {
-  background: #f2f2f2 ;
+  background: #f2f2f2;
   padding: 30px;
+  cursor: default;
 }
 
 h3,
@@ -253,11 +252,7 @@ footer div a {
 
 .projects {
   display: block;
-  max-width: 1280px;
-  background: repeating-linear-gradient(180deg,
-  #f0f0f0 0px,
-  #c2c2c2 100px,
-  #c2c2c2 100%);
+  max-width: 1140px;
   padding: 10px;
   margin: auto;
   padding-top: 80px;
@@ -304,7 +299,6 @@ footer div a {
   grid-template-columns: repeat(5, 1fr);
 }
 
-
 .cell {
   position: relative;
   display: flex;
@@ -314,8 +308,6 @@ footer div a {
   justify-content: space-between;
 }
 
-
-
 .v1 {
   grid-column-start: 1;
   grid-column-end: span 2;
@@ -323,14 +315,11 @@ footer div a {
   grid-row-end: span 1;
 }
 
-
-
 .v2 {
   grid-column-start: span 3;
   grid-column-end: 6;
   grid-row-start: span 2;
 }
-
 
 .v3 {
   grid-column-start: span 1;
@@ -393,3 +382,230 @@ footer div a {
 }
 
 /**************************/
+
+/********* skells ********/
+
+
+.skills {
+  display: block;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+}
+
+h4 {
+  margin-top: 0;
+  margin-bottom: .5rem
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem
+}
+
+h4 {
+  margin-bottom: .5rem;
+  font-weight: 600;
+  line-height: 1.2
+}
+
+h4 {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 1.5rem;
+}
+
+.skills .container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto
+}
+
+@media (min-width:576px) {
+  .container {
+    max-width: 540px
+  }
+}
+
+@media (min-width:768px) {
+  .container {
+    max-width: 720px
+  }
+}
+
+@media (min-width:992px) {
+  .container {
+    max-width: 960px
+  }
+}
+
+@media (min-width:1200px) {
+  .container {
+    max-width: 1140px
+  }
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px
+}
+
+.col,
+.col-auto,
+.col-lg-6,
+.col-md-10 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px
+}
+
+.col {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%
+}
+
+.col-auto {
+  flex: 0 0 auto;
+  width: auto;
+  max-width: 100%
+}
+
+@media (min-width:768px) {
+  .col-md-10 {
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%
+  }
+}
+
+@media (min-width:992px) {
+  .col-lg-6 {
+    flex: 0 0 50%;
+    max-width: 50%
+  }
+}
+
+.card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, .125);
+  border-radius: .25rem
+}
+
+.card-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1.25rem
+}
+
+.card-title {
+  margin-bottom: .75rem;
+}
+
+
+.card-img {
+  width: 100%;
+  border-radius: calc(.25rem - 1px)
+}
+
+@media (min-width:576px) {
+  .card-columns .card {
+    display: inline-block;
+    width: 100%
+  }
+}
+
+.d-flex {
+  display: flex !important
+}
+
+.align-items-center {
+  align-items: center !important
+}
+
+.shadow {
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important
+}
+
+.m-0 {
+  margin: 0 !important
+}
+
+.mt-0 {
+  margin-top: 0 !important
+}
+
+.ml-2 {
+  margin-left: .5rem !important
+}
+
+.my-3 {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important
+}
+
+.p-0 {
+  padding: 0 !important
+}
+
+.p-2 {
+  padding: .5rem !important
+}
+
+.pt-2 {
+  padding-top: .5rem !important
+}
+
+.py-5 {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important
+}
+
+.mx-auto {
+  margin-right: auto !important;
+  margin-left: auto !important
+}
+
+.text-center {
+  text-align: center !important
+}
+
+.text-secondary {
+  color: #6c757d !important
+}
+
+.f-img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: url(../images/skills.png);
+  background-repeat: no-repeat;
+}
+
+.f-img.f-img1 {
+  background-position: 0 0;
+}
+
+.f-img.f-img2 {
+  background-position: -100px 0;
+}
+
+.f-img.f-img3 {
+  background-position: 0 -100px;
+}
+
+.f-img.f-img4 {
+  background-position: -100px -100px;
+}

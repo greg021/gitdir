@@ -1,3 +1,7 @@
+## V0.1.4
+
+Added skills section (incomplete)<br />
+
 ## V0.1.3
 
 @hotfix - Desktop NavBar Fix.<br />
