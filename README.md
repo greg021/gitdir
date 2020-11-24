@@ -1,3 +1,7 @@
+## V0.1.5
+
+@hotfix - About section heading<br />
+
 ## V0.1.4
 
 Added skills section (incomplete)<br />

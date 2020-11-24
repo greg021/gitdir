@@ -52,24 +52,27 @@
   <!-- About section  -->
 
   <section class="about" id="abt">
-    <img src="images/anonymous.jpg" alt="anonymous">
-    <div class="about-content">
-      <h3 class="about-heading">I Design Awesome Web Apps</h3>
-      <p class="about-para">Lorem ipsum dolor sit amet, consectetur Morbi sagittis, sem quisci ipsum gravida tortor
-        orci ipsum gravida tortor. Lorem ipsum dolor sit amet, conseconsectetur.</p>
-      <ul>
-        <li>Consectetur Morbi sagittis, sem quisci ipsum gravida tortor</li>
-        <li>Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida</li>
-        <li>Lorem ipsum dolor sit amet, consectetur Morbi sagittis, quisci gravida</li>
-        <li>Sagittis, sem quis lacinia faucibus, orci ipsum gravida</li>
-        <li>Ipsum dolor sit amet, consectetur Morbi sagittis, sem quisci</li>
-      </ul>
+    <h2 class="section-heading">WHO AM I</h2>
+    <div class="whoami-content">
+      <img src="images/anonymous.jpg" alt="anonymous">
+      <div class="about-content">
+        <h3 class="about-heading">I Design Awesome Web Apps</h3>
+        <p class="about-para">Lorem ipsum dolor sit amet, consectetur Morbi sagittis, sem quisci ipsum gravida tortor
+          orci ipsum gravida tortor. Lorem ipsum dolor sit amet, conseconsectetur.</p>
+          <ul>
+            <li>Consectetur Morbi sagittis, sem quisci ipsum gravida tortor</li>
+            <li>Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida</li>
+            <li>Lorem ipsum dolor sit amet, consectetur Morbi sagittis, quisci gravida</li>
+            <li>Sagittis, sem quis lacinia faucibus, orci ipsum gravida</li>
+            <li>Ipsum dolor sit amet, consectetur Morbi sagittis, sem quisci</li>
+          </ul>
+        </div>
     </div>
   </section>
 
   <!-- skills section  -->
 
-  <section class="skills py-5" id="skl">
+  <section class="skills pt-80 " id="skl">
     <h2 class="section-heading">SKILLS</h2>
     <div class="container">
       <div class="row pt-2 text-secondary">
@@ -169,6 +172,22 @@
   <!-- footer + credits + copyright -->
 
   <footer></footer>
+
+  <script>
+    // whoami
+
+    const whoami = document.querySelector('.whoami');
+    whoami.addEventListener('mousedown', () => {
+      whoami.style.transform = 'translate(3px, 3px)';
+      whoami.style.boxShadow = 'none';
+    })
+
+    whoami.addEventListener('mouseup', () => {
+      whoami.style.transform = 'none';
+      whoami.style.boxShadow = '3px 3px black';
+    })
+
+  </script>
 </body>
 
 </html>

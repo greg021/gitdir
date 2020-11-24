@@ -11,20 +11,14 @@ body {
 }
 
 h3,
-img,
-  {
+img {
   display: inline-block;
   font-style: normal;
   font-weight: normal;
 }
 
-h1::selection,
-h2::selection,
-h3::selection,
-p::selection,
-li::selection,
-a::selection {
-  background-color: transparent;
+*::selection {
+  background-color: rgba(255, 187, 0, 0.5);
 }
 
 /******* HEADER SECTION ************/
@@ -77,6 +71,7 @@ header {
 }
 
 .heading .whoami-btn {
+  display: block;
   position: relative;
 }
 
@@ -89,19 +84,18 @@ header {
 }
 
 .heading .whoami-btn .btn {
-  background-color: #555555;
-  border: 2px solid #555555;
+  display: inline-block;
+  background-color: #646464;
+  border: 2px solid #646464;
   font-style: normal;
   font-weight: normal;
   padding: .5rem 1rem;
-  transition: all .3s ease-in-out;
+  box-shadow: 3px 3px black;
+  transition: all .1s ease-in-out;
 }
 
 .whoami-btn .btn:hover {
-  background-color: #f5f5f5;
-  color: #333333;
-  box-shadow: inset 0 0 15px #333333;
-  border-radius: 5px;
+  opacity: .9;
 }
 
 /*******************************/
@@ -153,11 +147,14 @@ li a:hover {
 /****** ABOUT  SECTION *******/
 
 .about {
+  padding-top: 80px;
+}
+
+.whoami-content {
   display: grid;
   max-width: 1140px;
   margin: auto;
   padding: 10px;
-  padding-top: 80px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
@@ -166,13 +163,14 @@ img {
   max-width: 100%;
   height: auto;
   border-radius: 20px;
-  margin-top: 6em;
+  margin-top: 5rem;
   opacity: .85;
 }
 
 .about-content {
   background: #f2f2f2;
   padding: 30px;
+  padding-top: 0;
   cursor: default;
 }
 
@@ -181,7 +179,9 @@ h3,
   font-size: 2em;
   color: #000000;
   opacity: 90%;
-  margin: 30px auto 35px auto;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  margin: auto;
 }
 
 p.about-para,
@@ -237,7 +237,7 @@ footer div a {
   font-family: sans-serif;
   font-weight: bold;
   font-size: 50px;
-  color: rgb(93, 93, 93);
+  color: rgba(255, 234, 234, 0.89);
 }
 
 .section-heading {
@@ -245,6 +245,7 @@ footer div a {
   text-align: center;
   height: 90px;
   font-family: monospace;
+  font-weight: 500;
   font-size: 45px;
   line-height: 90px;
   background-color: transparent;
@@ -260,35 +261,82 @@ footer div a {
 }
 
 .color1 {
-  background: #e75252;
+  background: linear-gradient(170deg,
+      rgba(49, 57, 73, 0.8) 20%,
+      rgba(49, 57, 73, 0.5) 20%,
+      rgba(49, 57, 73, 0.5) 35%,
+      rgba(41, 48, 61, 0.6) 35%,
+      rgba(41, 48, 61, 0.8) 45%,
+      rgba(31, 36, 46, 0.5) 45%,
+      rgba(31, 36, 46, 0.8) 75%,
+      rgba(49, 57, 73, 0.5) 75%),
+    linear-gradient(45deg,
+      rgba(20, 24, 31, 0.8) 0%,
+      rgba(41, 48, 61, 0.8) 50%,
+      rgba(82, 95, 122, 0.8) 50%,
+      rgba(133, 146, 173, 0.8) 100%) #313949;
+
 }
 
 .color2 {
-  background: #56c778;
+  background: linear-gradient(45deg,
+      rgba(20, 24, 31, 0.8) 0%,
+      rgba(41, 48, 61, 0.8) 50%,
+      rgba(82, 95, 122, 0.8) 50%,
+      rgba(133, 146, 173, 0.8) 100%) #313949;
 }
 
 .color3 {
-  background: #34c7cc;
+  background: linear-gradient(100deg,
+      rgba(73, 49, 49, 0.8) 20%,
+      rgba(73, 49, 49, 0.5) 20%,
+      rgba(73, 49, 49, 0.5) 35%,
+      rgba(61, 41, 41, 0.6) 35%,
+      rgba(61, 41, 41, 0.8) 45%,
+      rgba(46, 31, 31, 0.5) 45%,
+      rgba(46, 33, 31, 0.8) 75%,
+      rgba(73, 49, 49, 0.5) 75%),
+    linear-gradient(-25deg,
+      rgba(31, 20, 20, 0.8) 0%,
+      rgba(34, 20, 20, 0.5) 30%,
+      rgba(61, 41, 41, 0.794) 30%,
+      rgba(59, 45, 45, 0.555) 65%,
+      rgba(179, 131, 131, 0.5) 65%,
+      rgba(173, 133, 133, 0.8) 100%) #e9c4a1;
 }
 
 .color4 {
-  background: #b43deb;
+  background: linear-gradient(1550deg,
+      rgba(49, 57, 73, 0.8) 20%,
+      rgba(49, 57, 73, 0.5) 20%,
+      rgba(49, 57, 73, 0.5) 35%,
+      rgba(41, 48, 61, 0.6) 35%,
+      rgba(41, 48, 61, 0.8) 45%,
+      rgba(31, 36, 46, 0.5) 45%,
+      rgba(31, 36, 46, 0.8) 75%,
+      rgba(49, 57, 73, 0.5) 75%) #b43deb;
 }
 
 .color5 {
-  background: #f1b22a;
+  background: linear-gradient(-25deg,
+      rgba(31, 20, 20, 0.8) 0%,
+      rgba(34, 20, 20, 0.5) 30%,
+      rgba(61, 41, 41, 0.794) 30%,
+      rgba(59, 45, 45, 0.555) 65%,
+      rgba(179, 131, 131, 0.5) 65%,
+      rgba(173, 133, 133, 0.8) 100%) #e9c4a1;
 }
 
 .color6 {
-  background: #df3258;
+  background: #31112c;
 }
 
 .color7 {
-  background: #00ad74;
+  background: #7d0633;
 }
 
 .color8 {
-  background: #d8db14;
+  background: #f2a07b;
 }
 
 .grid-3-5 {
@@ -501,7 +549,12 @@ h4 {
   background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, .125);
+  transition: transform .3s;
   border-radius: .25rem
+}
+
+.card:hover {
+  transform: scale(1.05)
 }
 
 .card-body {
@@ -512,12 +565,6 @@ h4 {
 
 .card-title {
   margin-bottom: .75rem;
-}
-
-
-.card-img {
-  width: 100%;
-  border-radius: calc(.25rem - 1px)
 }
 
 @media (min-width:576px) {
@@ -568,9 +615,8 @@ h4 {
   padding-top: .5rem !important
 }
 
-.py-5 {
-  padding-top: 3rem !important;
-  padding-bottom: 3rem !important
+.pt-80 {
+  padding-top: 80px !important
 }
 
 .mx-auto {
