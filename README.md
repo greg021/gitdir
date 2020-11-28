@@ -1,3 +1,7 @@
+## V0.1.7
+
+improved style<br />
+
 ## V0.1.6
 
 @fix - Added scroll effect<br />

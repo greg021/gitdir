@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="preload" as="font" href="fonts/Kreon-VariableFont_wght.ttf" crossorigin="anonymous"> 
-  <link rel="preload" as="font" href="fonts/SourceCodePro-Regular.ttf" crossorigin="anonymous"> 
+  <link rel="preload" as="font" href="fonts/Kreon-VariableFont_wght.ttf" crossorigin="anonymous">
+  <link rel="preload" as="font" href="fonts/SourceCodePro-Regular.ttf" crossorigin="anonymous">
   <link rel="preload" href="css/styles.css" as="style">
 
   <!-- css stylesheet -->
@@ -36,29 +36,29 @@
 
   <!-- Header  -->
 
-  <header id="head">
-    <div class="heading">
-      <div class="welcome-text">
-        <h1>Hi ! I'm Greg</h1>
+  <header id="head" class="pos-relative">
+    <div class="heading d-grid text-center">
+      <div class="welcome-text pos-relative">
+        <h1 class="pos-absolute l-0 r-0 m-auto">Hi ! I'm Greg</h1>
       </div>
-      <div class="tag">
+      <div class="pos-relative">
         <p>A Web Developer</p>
       </div>
-      <div class="whoami-btn">
-        <a class="whoami btn" href="#abt">Who am I</a>
+      <div class="d-block pos-relative">
+        <a class="whoami btn white" href="#abt">Who am I</a>
       </div>
     </div>
   </header>
 
   <!-- Navigation  -->
 
-  <nav>
+  <nav class="d-grid p-10 pos-sticky t-0">
     <div>
       <a href="#head" id="zzz">
         <h2>Greg Jones</h2>
       </a>
     </div>
-    <ul>
+    <ul class="d-grid align-items-center justify-items-center">
       <li class="nav-btn"><a href="#abt">About</a></li>
       <li class="nav-btn"><a href="#skl">Skills</a></li>
       <li class="nav-btn"><a href="#prj">Projects</a></li>
@@ -70,9 +70,9 @@
 
   <section class="about" id="abt">
     <h2 class="section-heading">WHO AM I</h2>
-    <div class="whoami-content">
+    <div class="whoami-content d-grid m-auto p-10">
       <img src="images/anonymous.jpg" alt="anonymous">
-      <div class="about-content">
+      <div class="about-content pt-0">
         <h3 class="about-heading">I Design Awesome Web Apps</h3>
         <p class="about-para">Lorem ipsum dolor sit amet, consectetur Morbi sagittis, sem quisci ipsum gravida tortor
           orci ipsum gravida tortor. Lorem ipsum dolor sit amet, conseconsectetur.</p>
@@ -89,9 +89,9 @@
 
   <!-- skills section  -->
 
-  <section class="skills pt-80 " id="skl">
+  <section class="skills d-block text-align-left pt-80 " id="skl">
     <h2 class="section-heading">SKILLS</h2>
-    <div class="container">
+    <div class="container px-15 mx-auto">
       <div class="row pt-2 text-secondary">
         <div class="col-md-10 col-lg-6 mx-auto">
           <div class="card card-body p-2 shadow my-3">
@@ -155,22 +155,22 @@
 
   <!-- projects section  -->
 
-  <section class="projects" id="prj">
+  <section class="d-block m-auto p-10 projects" id="prj">
     <h2 class="section-heading">PROJECTS</h2>
-    <div class="grid-3-5">
-      <div class="cell v1 color1">
+    <div class="d-grid grid-3-5">
+      <div class="cell v1 bg-grad1">
         <h1 class="label">P-1</h1>
       </div>
-      <div class="cell v1 color2">
+      <div class="cell v1 bg-grad2">
         <h1 class="label">P-2</h1>
       </div>
-      <div class="cell v2 color3">
+      <div class="cell v2 bg-grad3">
         <h1 class="label">P-3</h1>
       </div>
-      <div class="cell v3 color4">
+      <div class="cell v3 bg-grad4">
         <h1 class="label">P-4</h1>
       </div>
-      <div class="cell v3 color5">
+      <div class="cell v3 bg-grad5">
         <h1 class="label">P-5</h1>
       </div>
       <div class="cell v3 color6">
