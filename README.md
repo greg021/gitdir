@@ -1,3 +1,8 @@
+## V0.1.6
+
+@fix - Added scroll effect<br />
+Preloaded fonts<br />
+
 ## V0.1.5
 
 @hotfix - About section heading<br />

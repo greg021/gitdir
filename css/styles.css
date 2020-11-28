@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background-color: #eeeeee;
@@ -122,12 +125,13 @@ nav ul {
   justify-items: center;
 }
 
-nav h2 {
+nav #zzz {
   display: inline-block;
+  text-decoration: none;
   padding: 0.1em .55em;
   background-color: #bbbbbb;
+  color: #000000;
   border-radius: 10px;
-  font-size: clamp(24px, 2.65vw, 36px);
   cursor: default;
 }
 
@@ -654,4 +658,14 @@ h4 {
 
 .f-img.f-img4 {
   background-position: -100px -100px;
+}
+
+/***********************/
+
+/**  contact ***********/
+
+.contact {
+  height: 70vh;
+  width: 100%;
+  background: #222222;
 }

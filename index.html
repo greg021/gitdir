@@ -5,23 +5,38 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="preload" as="font" href="fonts/Kreon-VariableFont_wght.ttf" crossorigin="anonymous"> 
+  <link rel="preload" as="font" href="fonts/SourceCodePro-Regular.ttf" crossorigin="anonymous"> 
+  <link rel="preload" href="css/styles.css" as="style">
+
   <!-- css stylesheet -->
   <link rel="stylesheet" href="css/styles.css">
-
-
-  <!-- google fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Kreon&family=Source+Code+Pro&display=swap" rel="stylesheet">
 
   <!-- favicon -->
   <link rel="icon" href="images/logo.png" type="icon/png">
   <title>Greg Jones</title>
+
+  <style>
+    @font-face {
+      font-family: 'Kreon';
+      src: url('fonts/Kreon-VariableFont_wght.ttf') format("truetype");
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Source Code Pro';
+      src: url('fonts/SourceCodePro-Regular.ttf') format("truetype");
+      font-style: normal;
+      font-weight: 400;
+    }
+  </style>
 </head>
 
 <body>
 
   <!-- Header  -->
 
-  <header>
+  <header id="head">
     <div class="heading">
       <div class="welcome-text">
         <h1>Hi ! I'm Greg</h1>
@@ -39,7 +54,9 @@
 
   <nav>
     <div>
-      <h2>Greg Jones</h2>
+      <a href="#head" id="zzz">
+        <h2>Greg Jones</h2>
+      </a>
     </div>
     <ul>
       <li class="nav-btn"><a href="#abt">About</a></li>
@@ -59,14 +76,14 @@
         <h3 class="about-heading">I Design Awesome Web Apps</h3>
         <p class="about-para">Lorem ipsum dolor sit amet, consectetur Morbi sagittis, sem quisci ipsum gravida tortor
           orci ipsum gravida tortor. Lorem ipsum dolor sit amet, conseconsectetur.</p>
-          <ul>
-            <li>Consectetur Morbi sagittis, sem quisci ipsum gravida tortor</li>
-            <li>Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida</li>
-            <li>Lorem ipsum dolor sit amet, consectetur Morbi sagittis, quisci gravida</li>
-            <li>Sagittis, sem quis lacinia faucibus, orci ipsum gravida</li>
-            <li>Ipsum dolor sit amet, consectetur Morbi sagittis, sem quisci</li>
-          </ul>
-        </div>
+        <ul>
+          <li>Consectetur Morbi sagittis, sem quisci ipsum gravida tortor</li>
+          <li>Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida</li>
+          <li>Lorem ipsum dolor sit amet, consectetur Morbi sagittis, quisci gravida</li>
+          <li>Sagittis, sem quis lacinia faucibus, orci ipsum gravida</li>
+          <li>Ipsum dolor sit amet, consectetur Morbi sagittis, sem quisci</li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -169,9 +186,9 @@
   </section>
 
 
-  <!-- footer + credits + copyright -->
+  <!-- contact + credits + copyright -->
 
-  <footer></footer>
+  <section class="contact" id="cnt"></section>
 
   <script>
     // whoami
@@ -186,7 +203,6 @@
       whoami.style.transform = 'none';
       whoami.style.boxShadow = '3px 3px black';
     })
-
   </script>
 </body>
 
