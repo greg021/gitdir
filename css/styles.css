@@ -56,6 +56,10 @@ a {
   justify-content: space-around
 }
 
+.justify-content-sp-between {
+  justify-content: space-between
+}
+
 .place-self-center {
   place-self: center
 }
@@ -292,6 +296,21 @@ a {
   padding-bottom: auto
 }
 
+.font-xs {
+  font-size: 1rem;
+  font-size: clamp(1rem, 2.1vw, 1.2rem);
+}
+
+.font-s {
+  font-size: 20px;
+  font-size: clamp(16px, 2.5vw, 28px);
+}
+
+.font-m {
+  font-size: 1.5rem;
+  font-size: clamp(1.36rem, 4.2vw, 2rem);
+}
+
 .text-center {
   text-align: center
 }
@@ -439,16 +458,12 @@ header {
 .heading p {
   font-family: 'Source Code Pro', monospace;
   color: #222222;
-  font-size: 20px;
-  font-size: clamp(16px, 2.5vw, 28px);
 }
 
 .heading .whoami {
   font-family: 'Source Code Pro', monospace;
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 20px;
-  font-size: clamp(16px, 2.5vw, 28px);
 }
 
 .heading .btn {
@@ -481,13 +496,11 @@ nav {
 
 nav h2 {
   font-weight: 500;
-  font-size: 1.5rem;
-  font-size: clamp(1.36rem, 4.2vw, 2rem);
   color: #e6e6e6;
 }
 
 .nav-links {
-  width: 35%;
+  width: 40%;
 }
 
 .nav-links a {
@@ -517,7 +530,7 @@ nav h2 {
 }
 
 .nav-active {
-  transform: translateX(0%) !important;
+  transform: translateX(0) !important;
 }
 
 @media screen and (max-width: 1024px) {
@@ -528,7 +541,7 @@ nav h2 {
 
 @media screen and (max-width: 768px) {
   body {
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
   }
 
   nav {
@@ -543,12 +556,18 @@ nav h2 {
     position: absolute;
     right: 0;
     top: 60px;
-    background: #2f2f2f;
+    background: #2f2f2f;    
     flex-direction: column;
     align-items: center;
     transform: translateX(100%);
-    transition: transform .3s ease-in-out;
+    transition: transform .4s ease-in-out;
   }
+  
+  
+.nav-links li {
+    transform: translateX(70px);
+    opacity: 0;
+}
 
   .burger {
     display: block;
@@ -570,13 +589,21 @@ nav h2 {
   }
 }
 
+@keyframes navLinkFade {
+            from {
+                opacity: 0;
+                transform: translateX(70px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
 /*****************************/
 
 /****** ABOUT  SECTION *******/
-
-.about {
-  padding-top: 80px;
-}
 
 .whoami-content {
   max-width: 1140px;
@@ -600,11 +627,8 @@ img {
 
 h3,
 .about-heading {
-  font-size: 2em;
   color: #000000;
   opacity: 90%;
-  padding-top: 10px;
-  padding-bottom: 15px;
   margin: auto;
 }
 
@@ -661,25 +685,24 @@ footer div a {
   line-height: 290px;
   font-family: sans-serif;
   font-weight: bold;
-  font-size: 50px;
+  font-size: 20px;
   color: rgba(255, 234, 234, 0.89);
 }
 
 .section-heading {
   width: 100%;
   text-align: center;
-  height: 80px;
+  height: 64px;
   font-family: monospace;
   font-weight: 500;
-  font-size: 40px;
-  line-height: 80px;
+  font-size: 32px;
+  line-height: 64px;
   background-color: transparent;
 }
 
 .projects {
   max-width: 1140px;
-  padding-top: 80px;
-  margin-top: 20px;
+  padding-top: 70px;
 }
 
 .color6 {
@@ -943,8 +966,8 @@ h4 {
   padding-top: .5rem !important
 }
 
-.pt-80 {
-  padding-top: 80px !important
+.pt-70 {
+  padding-top: 70px !important
 }
 
 .f-img {

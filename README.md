@@ -1,3 +1,7 @@
+## V1.2.0
+
+Nav Animation bug fix<br />
+
 ## V0.1.9
 
 Bug fix.<br />
