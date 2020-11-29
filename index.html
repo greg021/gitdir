@@ -7,6 +7,7 @@
 
   <link rel="preload" as="font" href="fonts/Kreon-VariableFont_wght.ttf" crossorigin="anonymous">
   <link rel="preload" as="font" href="fonts/SourceCodePro-Regular.ttf" crossorigin="anonymous">
+  <link rel="preload" as="font" href="fonts/Play-Regular.ttf" crossorigin="anonymous">
   <link rel="preload" href="css/styles.css" as="style">
 
   <!-- css stylesheet -->
@@ -26,6 +27,13 @@
     @font-face {
       font-family: 'Source Code Pro';
       src: url('fonts/SourceCodePro-Regular.ttf') format("truetype");
+      font-style: normal;
+      font-weight: 400;
+    }
+
+    @font-face {
+      font-family: 'Play';
+      src: url('fonts/Play-Regular.ttf') format("truetype");
       font-style: normal;
       font-weight: 400;
     }
@@ -52,7 +60,7 @@
 
   <!-- Navigation  -->
 
-  <nav class="d-grid p-10 pos-sticky t-0">
+  <!-- <nav class="d-grid p-10 pos-sticky t-0">
     <div>
       <a href="#head" id="zzz">
         <h2>Greg Jones</h2>
@@ -64,6 +72,23 @@
       <li class="nav-btn"><a href="#prj">Projects</a></li>
       <li class="nav-btn"><a href="#cnt">Contact</a></li>
     </ul>
+  </nav> -->
+
+  <nav class="d-flex t-0 align-items-center justify-content-sp-around m-auto br-5">
+    <a href="#head">
+      <h2>Greg Jones</h2>
+    </a>
+    <ul class="nav-links d-flex justify-content-sp-around">
+      <li><a href="#abt">About</a></li>
+      <li><a href="#skl">Skills</a></li>
+      <li><a href="#prj">Project</a></li>
+      <li><a href="#cnt">Contact</a></li>
+    </ul>
+    <div class="burger pointer d-none">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
   </nav>
 
   <!-- About section  -->
@@ -81,7 +106,6 @@
           <li>Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida</li>
           <li>Lorem ipsum dolor sit amet, consectetur Morbi sagittis, quisci gravida</li>
           <li>Sagittis, sem quis lacinia faucibus, orci ipsum gravida</li>
-          <li>Ipsum dolor sit amet, consectetur Morbi sagittis, sem quisci</li>
         </ul>
       </div>
     </div>
@@ -92,7 +116,7 @@
   <section class="skills d-block text-align-left pt-80 " id="skl">
     <h2 class="section-heading">SKILLS</h2>
     <div class="container px-15 mx-auto">
-      <div class="row pt-2 text-secondary">
+      <div class="row pt-2">
         <div class="col-md-10 col-lg-6 mx-auto">
           <div class="card card-body p-2 shadow my-3">
             <div class="d-flex align-items-center">
@@ -190,20 +214,7 @@
 
   <section class="contact" id="cnt"></section>
 
-  <script>
-    // whoami
-
-    const whoami = document.querySelector('.whoami');
-    whoami.addEventListener('mousedown', () => {
-      whoami.style.transform = 'translate(3px, 3px)';
-      whoami.style.boxShadow = 'none';
-    })
-
-    whoami.addEventListener('mouseup', () => {
-      whoami.style.transform = 'none';
-      whoami.style.boxShadow = '3px 3px black';
-    })
-  </script>
+  <script src="script/script.js"></script>
 </body>
 
 </html>

@@ -1,3 +1,7 @@
+## V0.1.8
+
+Improved nav bar
+
 ## V0.1.7
 
 improved style<br />
