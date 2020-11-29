@@ -1,6 +1,10 @@
+## V0.1.9
+
+Bug fix.<br />
+
 ## V0.1.8
 
-Improved nav bar
+Improved nav bar<br />
 
 ## V0.1.7
 

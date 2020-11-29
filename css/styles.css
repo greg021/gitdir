@@ -430,6 +430,7 @@ header {
 
 .heading .welcome-text h1 {
   color: #333333;
+  font-size: 5rem;
   font-size: clamp(3rem, 9.4vw, 7rem);
   font-weight: 500;
   bottom: 5%;
@@ -438,6 +439,7 @@ header {
 .heading p {
   font-family: 'Source Code Pro', monospace;
   color: #222222;
+  font-size: 20px;
   font-size: clamp(16px, 2.5vw, 28px);
 }
 
@@ -445,6 +447,7 @@ header {
   font-family: 'Source Code Pro', monospace;
   text-transform: uppercase;
   text-decoration: none;
+  font-size: 20px;
   font-size: clamp(16px, 2.5vw, 28px);
 }
 
@@ -468,7 +471,8 @@ header {
 /****** NAVIGATION SECTION *****/
 nav {
   position: sticky;
-  width: min(100%, 1140px);
+  width: 100%;
+  max-width: 1140px;
   height: 60px;
   background: #2f2f2f;
   letter-spacing: 1px;
@@ -477,6 +481,7 @@ nav {
 
 nav h2 {
   font-weight: 500;
+  font-size: 1.5rem;
   font-size: clamp(1.36rem, 4.2vw, 2rem);
   color: #e6e6e6;
 }
@@ -486,6 +491,7 @@ nav h2 {
 }
 
 .nav-links a {
+  font-size: 1rem;
   font-size: clamp(1rem, 2.1vw, 1.2rem);
   color: #e6e6e6;
 }
@@ -528,7 +534,7 @@ nav h2 {
   nav {
     position: fixed;
     box-shadow: 0 3px 20px #555555;
-    border-radius: 0;
+    border-radius: 0 !important;
   }
 
   .nav-links {
@@ -579,7 +585,7 @@ nav h2 {
 
 img {
   background-blend-mode: luminosity;
-  max-width: 100%;
+  max-width: 90%;
   height: auto;
   border-radius: 20px;
   margin-top: 5rem;
@@ -603,8 +609,9 @@ h3,
 }
 
 p.about-para,
-li {
-  font-size: 1.35em;
+.about-content li {
+  font-size: 1rem;
+  font-size: clamp(1rem, 2.1vw, 1.2rem);
   color: #2f2f2f;
   letter-spacing: 1%;
   line-height: 1.75em;
@@ -661,11 +668,11 @@ footer div a {
 .section-heading {
   width: 100%;
   text-align: center;
-  height: 90px;
+  height: 80px;
   font-family: monospace;
   font-weight: 500;
-  font-size: 45px;
-  line-height: 90px;
+  font-size: 40px;
+  line-height: 80px;
   background-color: transparent;
 }
 
