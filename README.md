@@ -1,10 +1,10 @@
-## V1.2.1
+## V0.2.1
 
 Updated skill section, improved images and design<br />
 About section responsive<br />
 Added Goldman font<br />
 
-## V1.2.0
+## V0.2.0
 
 Nav Animation bug fix<br />
 
