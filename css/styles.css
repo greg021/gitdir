@@ -355,6 +355,14 @@ a {
   border-radius: 10px
 }
 
+.br-15 {
+  border-radius: 15px
+}
+
+.br-20 {
+  border-radius: 20px
+}
+
 .shadow {
   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .35) !important
 }
