@@ -1,18 +1,3 @@
-// whoami
-
-const whoami = document.querySelector('.whoami');
-whoami.addEventListener('mousedown', () => {
-  whoami.style.transform = 'translate(3px, 3px)';
-  whoami.style.boxShadow = 'none';
-})
-
-whoami.addEventListener('mouseup', () => {
-  whoami.style.transform = 'none';
-  whoami.style.boxShadow = '3px 3px black';
-})
-
-// nav
-
 const navSlide = () => {
   const burger = document.querySelector('.burger');
   const nav = document.querySelector('.nav-links');
@@ -40,11 +25,31 @@ const navSlide = () => {
 
   navLinks.forEach(element => {
     element.addEventListener('click', () => {
-      if(window.innerWidth <= 768){
+      if (window.innerWidth <= 768) {
         toggler();
         navLinkFade();
       }
     })
   })
 }
-navSlide();
+
+const btnAnimations = () => {
+  const whoami = document.querySelector('.whoami');
+
+  whoami.addEventListener('mousedown', () => {
+    whoami.style.transform = 'translate(3px, 3px)';
+    whoami.style.boxShadow = 'none';
+  })
+
+  whoami.addEventListener('mouseup', () => {
+    whoami.style.transform = 'none';
+    whoami.style.boxShadow = '3px 3px black';
+  })
+}
+
+const MAIN = () => {
+  navSlide();
+  btnAnimations();
+}
+
+MAIN();
