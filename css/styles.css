@@ -475,7 +475,12 @@ img {
 }
 
 *::selection {
-  background-color: rgba(255, 38, 0, 0.3);
+  background-color: #d6edff;
+  color: #373737;
+}
+
+img::selection {
+  background-color: transparent;
 }
 
 /******* HEADER SECTION ************/
@@ -831,22 +836,39 @@ nav h2 {
 
 .card {
   align-items: center;
-  min-width: 285px;
+  min-width: 335px;
   max-width: 552px;
-  transition: transform .3s;
-  background-color: #333333;
+  transition: all .3s;
+  background-color: #585353;
   color: #e6e6e6;
 }
 
 .card:hover {
-  transform: scale(1.05)
+  transform: scale(1.03)
 }
 
-.card img {
-  height: 100px;
-  width: 100px;
-  filter: brightness(85%);
-  padding: 5px;
+.card-image {
+  height: 90px;
+  width: 90px;
+  flex-shrink: 0;
+  background-color: #5d4c4c;
+  background: url("../images/skills.png");
+}
+
+.fa-1 {
+  background-position: 0 0
+}
+
+.fa-2 {
+  background-position: 90px 0
+}
+
+.fa-3 {
+  background-position: 0 90px
+}
+
+.fa-4 {
+  background-position: 90px 90px
 }
 
 .card h4 {
