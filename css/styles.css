@@ -508,12 +508,12 @@ header {
 }
 
 .heading p {
-  font-family: 'Source Code Pro', monospace;
+  font-family: monospace;
   color: #222222;
 }
 
 .heading .whoami {
-  font-family: 'Source Code Pro', monospace;
+  font-family: monospace;
   text-transform: uppercase;
   text-decoration: none;
 }
