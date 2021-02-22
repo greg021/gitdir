@@ -1,3 +1,8 @@
+## V0.9
+
+completed contacts and project section<br />
+made responsive
+
 ## V0.2.1
 
 Updated skill section, improved images and design<br />

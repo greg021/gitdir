@@ -1,169 +1,400 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="preload"
+      as="font"
+      href="fonts/Kreon-VariableFont_wght.ttf"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="fonts/Goldman-Regular.ttf"
+      crossorigin="anonymous"
+    />
+    <link rel="preload" href="css/styles.css" as="style" />
 
-  <link rel="preload" as="font" href="fonts/Kreon-VariableFont_wght.ttf" crossorigin="anonymous">
-  <link rel="preload" as="font" href="fonts/Goldman-Regular.ttf" crossorigin="anonymous">
-  <link rel="preload" href="css/styles.css" as="style">
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="css/styles.css" />
 
-  <!-- css stylesheet -->
-  <link rel="stylesheet" href="css/styles.css">
+    <!-- favicon -->
+    <link rel="icon" href="images/logo.png" type="icon/png" />
+    <title>Greg Jones</title>
 
-  <!-- favicon -->
-  <link rel="icon" href="images/logo.png" type="icon/png">
-  <title>Greg Jones</title>
+    <style>
+      @font-face {
+        font-family: "Kreon";
+        src: url("fonts/Kreon-VariableFont_wght.ttf") format("truetype");
+        font-style: normal;
+      }
 
-  <style>
-    @font-face {
-      font-family: 'Kreon';
-      src: url('fonts/Kreon-VariableFont_wght.ttf') format("truetype");
-      font-style: normal;
-    }
+      @font-face {
+        font-family: "Goldman";
+        src: url("fonts/Goldman-Regular.ttf") format("truetype");
+        font-style: normal;
+        font-weight: 400;
+      }
+    </style>
+  </head>
 
-    @font-face {
-      font-family: 'Goldman';
-      src: url('fonts/Goldman-Regular.ttf') format("truetype");
-      font-style: normal;
-      font-weight: 400;
-    }
-  </style>
-</head>
+  <body>
+    <!-- Header  -->
 
-<body>
-
-  <!-- Header  -->
-
-  <header id="head" class="pos-relative">
-    <div class="heading d-grid text-center">
-      <div class="welcome-text pos-relative">
-        <h1 class="pos-absolute l-0 r-0 m-auto">Hi ! I'm Greg</h1>
-      </div>
-      <div class="pos-relative">
-        <p class="font-s">A Web Developer</p>
-      </div>
-      <div class="d-block pos-relative">
-        <a class="whoami btn white font-s" href="#abt">Who am I</a>
-      </div>
-    </div>
-  </header>
-
-  <!-- Navigation  -->
-
-  <nav class="d-flex t-0 align-items-center justify-content-sp-between m-auto br-5">
-    <a href="#head" class="mx-10">
-      <h2 class="font-m">Greg Jones</h2>
-    </a>
-    <ul class="nav-links d-flex justify-content-sp-around">
-      <li><a href="#abt">About</a></li>
-      <li><a href="#skl">Skills</a></li>
-      <li><a href="#prj">Project</a></li>
-      <li><a href="#cnt">Contact</a></li>
-    </ul>
-    <div class="burger pointer d-none mx-10">
-      <div class="line1"></div>
-      <div class="line2"></div>
-      <div class="line3"></div>
-    </div>
-  </nav>
-
-  <!-- About section  -->
-
-  <section class="d-flex flex-col pt-70 px-10" id="abt">
-    <h2 class="section-heading">WHO AM I</h2>
-    <div class="about d-flex m-auto align-items-center p-10">
-      <img src="images/anonymous.jpg" alt="anonymous" class="p-10 br-20">
-      <div class="about-content p-10">
-        <h3 class="font-m py-10">I Design Awesome Web Apps</h3>
-        <p class="font-xs text-justify mb-10">Lorem ipsum dolor sit amet, consectetur Morbi sagittis, sem quisci ipsum
-          gravida tortor
-          orci ipsum gravida tortor. Lorem ipsum dolor sit amet, conseconsectetur.</p>
-        <ul class="font-xs text-justify">
-          <li>Consectetur Morbi sagittis, sem quisci ipsum gravida tortor</li>
-          <li>Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida</li>
-          <li>Lorem ipsum dolor sit amet, consectetur Morbi sagittis, quisci gravida</li>
-          <li>Sagittis, sem quis lacinia faucibus, orci ipsum gravida</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- skills section  -->
-
-  <section class="skills m-auto d-flex flex-col pt-70" id="skl">
-    <h2 class="section-heading">SKILLS</h2>
-    <div class="card-container d-grid justify-content-center p-10 pt-0 h-100">
-      <div class="card d-flex my-15 p-10 br-5 shadow">
-        <div class="card-image px-10 m-10 fa-1 br-10"></div>
-        <div class="card-content d-flex flex-col pr-10 pl-15">
-          <h4 class="pb-5">Design</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat aperiam.</p>
+    <header id="head" class="pos-relative">
+      <div class="heading d-grid text-center">
+        <div class="welcome-text pos-relative">
+          <h1 class="pos-absolute l-0 r-0 m-auto">Hi ! I'm Greg</h1>
+        </div>
+        <div class="pos-relative">
+          <p class="font-s">A Web Developer</p>
+        </div>
+        <div class="d-block pos-relative">
+          <a class="whoami btn white font-s" href="#abt">Who am I</a>
         </div>
       </div>
-      <div class="card d-flex my-15 p-10 br-5 shadow">
-        <div class="card-image px-10 m-10 fa-2 br-10"></div>
-        <div class="card-content d-flex flex-col pr-10 pl-15">
-          <h4 class="pb-5">Languages</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat aperiam.</p>
+    </header>
+
+    <!-- Navigation  -->
+
+    <nav
+      class="d-flex t-0 align-items-center justify-content-sp-between m-auto br-5"
+    >
+      <a href="#head" class="mx-10">
+        <h2 class="font-m">Greg Jones</h2>
+      </a>
+      <ul class="nav-links d-flex justify-content-sp-around">
+        <li><a href="#abt">About</a></li>
+        <li><a href="#skl">Skills</a></li>
+        <li><a href="#prj">Project</a></li>
+        <li><a href="#cnt">Contact</a></li>
+      </ul>
+      <div class="burger pointer d-none mx-10">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+
+    <!-- About section  -->
+
+    <section class="d-flex flex-col pt-70 px-10" id="abt">
+      <h2 class="section-heading">WHO AM I</h2>
+      <div class="about d-flex m-auto align-items-center p-10">
+        <img src="images/anonymous.jpg" alt="anonymous" class="p-10 br-20" />
+        <div class="about-content p-10">
+          <h3 class="font-m py-10">I Design Awesome Web Apps</h3>
+          <p class="font-xs text-justify mb-10">
+            Lorem ipsum dolor sit amet, consectetur Morbi sagittis, sem quisci
+            ipsum gravida tortor orci ipsum gravida tortor. Lorem ipsum dolor
+            sit amet, conseconsectetur.
+          </p>
+          <ul class="font-xs text-justify">
+            <li>Consectetur Morbi sagittis, sem quisci ipsum gravida tortor</li>
+            <li>
+              Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet, consectetur Morbi sagittis, quisci
+              gravida
+            </li>
+            <li>Sagittis, sem quis lacinia faucibus, orci ipsum gravida</li>
+          </ul>
         </div>
       </div>
-      <div class="card d-flex my-15 p-10 br-5 shadow">
-        <div class="card-image px-10 m-10 fa-3 br-10"></div>
-        <div class="card-content d-flex flex-col pr-10 pl-15">
-          <h4 class="pb-5">Front-End</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat aperiam.</p>
+    </section>
+
+    <!-- skills section  -->
+
+    <section class="skills m-auto d-flex flex-col pt-70" id="skl">
+      <h2 class="section-heading">SKILLS</h2>
+      <div class="card-container d-grid justify-content-center p-10 pt-0 h-100">
+        <div class="card d-flex my-15 p-10 br-5 shadow">
+          <div class="card-image px-10 m-10 fa-1 br-10"></div>
+          <div class="card-content d-flex flex-col pr-10 pl-15">
+            <h4 class="pb-5">Design</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+              aperiam.
+            </p>
+          </div>
+        </div>
+        <div class="card d-flex my-15 p-10 br-5 shadow">
+          <div class="card-image px-10 m-10 fa-2 br-10"></div>
+          <div class="card-content d-flex flex-col pr-10 pl-15">
+            <h4 class="pb-5">Languages</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+              aperiam.
+            </p>
+          </div>
+        </div>
+        <div class="card d-flex my-15 p-10 br-5 shadow">
+          <div class="card-image px-10 m-10 fa-3 br-10"></div>
+          <div class="card-content d-flex flex-col pr-10 pl-15">
+            <h4 class="pb-5">Front-End</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+              aperiam.
+            </p>
+          </div>
+        </div>
+        <div class="card d-flex my-15 p-10 br-5 shadow">
+          <div class="card-image px-10 m-10 fa-4 br-10"></div>
+          <div class="card-content d-flex flex-col pr-10 pl-15">
+            <h4 class="pb-5">Apps</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+              aperiam.
+            </p>
+          </div>
         </div>
       </div>
-      <div class="card d-flex my-15 p-10 br-5 shadow">
-        <div class="card-image px-10 m-10 fa-4 br-10"></div>
-        <div class="card-content d-flex flex-col pr-10 pl-15">
-          <h4 class="pb-5">Apps</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat aperiam.</p>
+    </section>
+
+    <!-- projects section  -->
+
+    <section class="d-block p-10 projects container" id="prj">
+      <h2 class="section-heading">PROJECTS</h2>
+      <div class="d-grid grid-3-5">
+        <div class="cell v1 bg-grad1">
+          <div class="project-card project1">
+            <div class="img-card">
+              <h2>Lorem-Nature-Blog</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Perspiciatis consectetur recusandae molestias voluptas quae qui
+                expedita nobis perferendis accusamus quibusdam.
+              </p>
+              <a
+                class="btn"
+                href="https://lorem-nature-blog.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Visit</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="cell v1 bg-grad2">
+          <div class="project-card project2">
+            <div class="img-card">
+              <h2>Lorem-Nature-Blog</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Perspiciatis consectetur recusandae molestias voluptas quae qui
+                expedita nobis perferendis accusamus quibusdam.
+              </p>
+              <a
+                class="btn"
+                href="https://lorem-nature-blog.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Visit</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="cell v2 bg-grad3">
+          <div class="project-card project3">
+            <div class="img-card">
+              <h2>Lorem-Nature-Blog</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Perspiciatis consectetur recusandae molestias voluptas quae qui
+                expedita nobis perferendis accusamus quibusdam.
+              </p>
+              <a
+                class="btn"
+                href="https://lorem-nature-blog.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Visit</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="cell v3 bg-grad4">
+          <div class="project-card project4">
+            <div class="img-card">
+              <h2>Lorem-Nature-Blog</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Perspiciatis consecteas
+              </p>
+              <a
+                class="btn"
+                href="https://lorem-nature-blog.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Visit</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="cell v3 bg-grad5">
+          <div class="project-card project5">
+            <div class="img-card">
+              <h2>Lorem-Nature-Blog</h2>
+              <p>
+                Lorem, ipsum dolor sit aming elit. Perspiciatis consectetur
+                recusandae molestias
+              </p>
+              <a
+                class="btn"
+                href="https://lorem-nature-blog.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Visit</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="cell v3 color6">
+          <div class="project-card project6">
+            <div class="img-card">
+              <h2>Lorem-Nature-Blog</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipi.tis consectetur
+                recusandae molestias
+              </p>
+              <a
+                class="btn"
+                href="https://lorem-nature-blog.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Visit</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="cell v4 color7">
+          <div class="project-card project7">
+            <div class="img-card">
+              <h2>Lorem-Nature-Blog</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectlit. Perspiciatis consectetur
+                recusandae molestias
+              </p>
+              <a
+                class="btn"
+                href="https://lorem-nature-blog.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Visit</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="cell v3 color8">
+          <div class="project-card project8">
+            <div class="img-card">
+              <h2>Lorem-Nature-Blog</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.ectetur
+                recusandae molestias
+              </p>
+              <a
+                class="btn"
+                href="https://lorem-nature-blog.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Visit</a
+              >
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- projects section  -->
+    <!-- contact + credits + copyright -->
 
-  <section class="d-block m-auto p-10 projects" id="prj">
-    <h2 class="section-heading">PROJECTS</h2>
-    <div class="d-grid grid-3-5">
-      <div class="cell v1 bg-grad1">
-        <h1 class="font-m white">P-1</h1>
-      </div>
-      <div class="cell v1 bg-grad2">
-        <h1 class="font-m white">P-2</h1>
-      </div>
-      <div class="cell v2 bg-grad3">
-        <h1 class="font-m white">P-3</h1>
-      </div>
-      <div class="cell v3 bg-grad4">
-        <h1 class="font-m white">P-4</h1>
-      </div>
-      <div class="cell v3 bg-grad5">
-        <h1 class="font-m white">P-5</h1>
-      </div>
-      <div class="cell v3 color6">
-        <h1 class="font-m white">P-6</h1>
-      </div>
-      <div class="cell v4 color7">
-        <h1 class="font-m white">P-7</h1>
-      </div>
-      <div class="cell v3 color8">
-        <h1 class="font-m white">P-8</h1>
-      </div>
-    </div>
-  </section>
+    <section class="contact" id="cnt">
+      <div class="d-flex container">
+        <div class="left d-flex flex-col">
+          <h3>Connect</h3>
+          <div class="logo-container d-flex">
+            <a
+              href="https://duckduckgo.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="logo"
+            >
+              <img src="./images/facebook.svg" alt="FB" />
+            </a>
+            <a
+              href="https://duckduckgo.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="logo"
+            >
+              <img src="./images/github.svg" alt="IG" />
+            </a>
+            <a
+              href="https://duckduckgo.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="logo"
+            >
+              <img src="./images/twitter.svg" alt="TW" />
+            </a>
+            <a
+              href="https://duckduckgo.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="logo"
+            >
+              <img src="./images/linkedIn.svg" alt="LI" />
+            </a>
+          </div>
+          <p class="copyright">&copy; 2021, Greg Jones</p>
+        </div>
 
+        <div class="hr"></div>
 
-  <!-- contact + credits + copyright -->
+        <div class="right d-flex flex-col">
+          <h3>Contact Me</h3>
+          <!-- form action="/contact" method="POST" class="d-flex flex-col" -->
+          <form action="#" class="d-flex flex-col">
+            <div class="form-container d-grid">
+              <input
+                required
+                type="text"
+                id="name"
+                name="name"
+                minlength="5"
+                maxlength="30"
+                placeholder="Your name.."
+              />
 
-  <section class="contact" id="cnt"></section>
+              <input
+                required
+                type="text"
+                id="sub"
+                name="subject"
+                minlength="6"
+                maxlength="80"
+                placeholder="Your Topic..."
+              />
 
-  <script src="script/script.js"></script>
-</body>
+              <textarea
+                required
+                id="desc"
+                name="desc"
+                minlength="20"
+                maxlength="300"
+                placeholder="Write something.."
+              ></textarea>
+            </div>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
 
+    <script src="script/script.js"></script>
+  </body>
 </html>
