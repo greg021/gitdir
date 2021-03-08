@@ -1,3 +1,7 @@
+## V1.0
+
+Added Content.
+
 ## V0.9
 
 completed contacts and project section<br />

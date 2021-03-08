@@ -845,35 +845,35 @@ nav h2 {
 }
 
 .project1 {
-  background: url("../images/1.png") no-repeat top;
+  background: url("../images/project/1.png") no-repeat top;
   background-size: cover;
 }
 .project2 {
-  background: url("../images/2.jpg") no-repeat top;
+  background: url("../images/project/2.jpg") no-repeat top;
   background-size: cover;
 }
 .project3 {
-  background: url("../images/3.jpg") no-repeat top;
+  background: url("../images/project/lorem-nature-blog.png") no-repeat top;
   background-size: cover;
 }
 .project4 {
-  background: url("../images/4.jpg") no-repeat top;
+  background: url("../images/project/4.jpg") no-repeat top;
   background-size: cover;
 }
 .project5 {
-  background: url("../images/5.png") no-repeat top;
+  background: url("../images/project/5.png") no-repeat top;
   background-size: cover;
 }
 .project6 {
-  background: url("../images/6.jpg") no-repeat top;
+  background: url("../images/project/6.jpg") no-repeat top;
   background-size: cover;
 }
 .project7 {
-  background: url("../images/7.jpg") no-repeat top;
+  background: url("../images/project/7.jpg") no-repeat top;
   background-size: cover;
 }
 .project8 {
-  background: url("../images/8.jpg") no-repeat top;
+  background: url("../images/project/8.jpg") no-repeat top;
   background-size: cover;
 }
 
@@ -882,7 +882,7 @@ nav h2 {
   height: 100%;
   color: white;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   display: flex;
   flex-direction: column;
   align-items: center;
