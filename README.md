@@ -1,3 +1,7 @@
+## V1.2
+
+Added connect links.
+
 ## V1.1
 
 Improved font size
