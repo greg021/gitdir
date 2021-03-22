@@ -1,3 +1,9 @@
+## V1.1
+
+Improved font size
+Added project images
+bug fix and loading speed improvement
+
 ## V1.0
 
 Added Content.

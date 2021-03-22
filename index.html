@@ -47,13 +47,15 @@
     <header id="head" class="pos-relative">
       <div class="heading d-grid text-center">
         <div class="welcome-text pos-relative">
-          <h1 class="pos-absolute l-0 r-0 m-auto">Hi ! I'm Greg</h1>
+          <h1 class="pos-absolute l-0 r-0 m-auto font-xxl">Hi ! I'm Greg</h1>
         </div>
         <div class="pos-relative">
-          <p class="font-s">A Web Developer</p>
+          <p class="font-m">A Web Developer</p>
         </div>
         <div class="d-block pos-relative">
-          <a class="whoami btn white font-s" href="#abt">Who am I</a>
+          <a class="whoami btn white font-family font-m" href="#abt"
+            >Who am I</a
+          >
         </div>
       </div>
     </header>
@@ -64,13 +66,13 @@
       class="d-flex t-0 align-items-center justify-content-sp-between m-auto br-5"
     >
       <a href="#head" class="mx-10">
-        <h2 class="font-m">Greg Jones</h2>
+        <h2 class="font-xl">Greg Jones</h2>
       </a>
       <ul class="nav-links d-flex justify-content-sp-around">
-        <li><a href="#abt">About</a></li>
-        <li><a href="#skl">Skills</a></li>
-        <li><a href="#prj">Project</a></li>
-        <li><a href="#cnt">Contact</a></li>
+        <li><a href="#abt" class="font-m">About</a></li>
+        <li><a href="#skl" class="font-m">Skills</a></li>
+        <li><a href="#prj" class="font-m">Project</a></li>
+        <li><a href="#cnt" class="font-m">Contact</a></li>
       </ul>
       <div class="burger pointer d-none mx-10">
         <div class="line1"></div>
@@ -82,17 +84,17 @@
     <!-- About section  -->
 
     <section class="d-flex flex-col pt-70 px-10" id="abt">
-      <h2 class="section-heading">WHO AM I</h2>
+      <h2 class="section-heading font-l">WHO AM I</h2>
       <div class="about d-flex m-auto align-items-center p-10">
         <img src="images/anonymous.jpg" alt="anonymous" class="p-10 br-20" />
         <div class="about-content p-10">
-          <h3 class="font-m py-10">I Design Awesome Web Apps</h3>
-          <p class="font-xs text-justify mb-10">
+          <h3 class="font-xl py-10">I Design Awesome Web Apps</h3>
+          <p class="font-s text-justify mb-10">
             I'm a passionate Full Stack Software Developer having an experience
             of building Web and Mobile applications with JavaScript / Reactjs /
             Nodejs / React Native and some other cool libraries and frameworks.
           </p>
-          <ul class="font-xs">
+          <ul class="font-s">
             <li>
               I develop highly interactive Front end / User Interfaces for web
               and mobile applications.
@@ -107,42 +109,42 @@
     <!-- skills section  -->
 
     <section class="skills m-auto d-flex flex-col pt-70" id="skl">
-      <h2 class="section-heading">SKILLS</h2>
+      <h2 class="section-heading font-l">SKILLS</h2>
       <div class="card-container d-grid justify-content-center p-10 pt-0 h-100">
-        <div class="card d-flex my-15 p-10 br-5 shadow">
+        <div class="card d-flex my-15 br-5 shadow">
           <div class="card-image px-10 m-10 fa-1 br-10"></div>
           <div class="card-content d-flex flex-col pr-10 pl-15">
-            <h4 class="pb-5">Design</h4>
-            <p>
+            <h4 class="pb-5 font-m2">Design</h4>
+            <p class="font-xs">
               Develop highly interactive Front end / User Interfaces for web and
               mobile applications.
             </p>
           </div>
         </div>
-        <div class="card d-flex my-15 p-10 br-5 shadow">
+        <div class="card d-flex my-15 br-5 shadow">
           <div class="card-image px-10 m-10 fa-2 br-10"></div>
           <div class="card-content d-flex flex-col pr-10 pl-15">
-            <h4 class="pb-5">Languages</h4>
-            <p>
+            <h4 class="pb-5 font-m2">Languages</h4>
+            <p class="font-xs">
               Good in Javascript and a bit of Python and C++. Love React.js
               library.
             </p>
           </div>
         </div>
-        <div class="card d-flex my-15 p-10 br-5 shadow">
+        <div class="card d-flex my-15 br-5 shadow">
           <div class="card-image px-10 m-10 fa-3 br-10"></div>
           <div class="card-content d-flex flex-col pr-10 pl-15">
-            <h4 class="pb-5">Front-End</h4>
-            <p>
+            <h4 class="pb-5 font-m2">Front-End</h4>
+            <p class="font-xs">
               Develop front-end with React, Gatsby or even vanilla Javascript.
             </p>
           </div>
         </div>
-        <div class="card d-flex my-15 p-10 br-5 shadow">
+        <div class="card d-flex my-15 br-5 shadow">
           <div class="card-image px-10 m-10 fa-4 br-10"></div>
           <div class="card-content d-flex flex-col pr-10 pl-15">
-            <h4 class="pb-5">Apps</h4>
-            <p>
+            <h4 class="pb-5 font-m2">Apps</h4>
+            <p class="font-xs">
               Develop hybrid and natively hybrid apps using React and
               React-native.
             </p>
@@ -154,7 +156,7 @@
     <!-- projects section  -->
 
     <section class="d-block p-10 projects container" id="prj">
-      <h2 class="section-heading">PROJECTS</h2>
+      <h2 class="section-heading font-l">PROJECTS</h2>
       <div class="d-grid grid-3-5">
         <div class="cell v1 bg-grad1">
           <div class="project-card project1">
@@ -342,7 +344,7 @@
               <img src="./images/connect/linkedIn.svg" alt="in" />
             </a>
           </div>
-          <p class="copyright">&copy; 2021, Greg Jones</p>
+          <p class="copyright font-xs">&copy; 2021, Greg Jones</p>
         </div>
 
         <div class="hr"></div>
