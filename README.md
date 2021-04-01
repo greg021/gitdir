@@ -1,3 +1,7 @@
+## V1.3
+
+Improved skill section layout and design
+
 ## V1.2
 
 Added connect links.
