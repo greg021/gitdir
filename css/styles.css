@@ -1058,9 +1058,17 @@ nav h2 {
   color: #333;
 }
 
-.card:hover {
-  /* transform: scale(1.03); */
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.35) !important;
+.card1:hover {
+  box-shadow: 0 0.5rem 1rem rgba(250, 0, 92, 0.6) !important;
+}
+.card2:hover {
+  box-shadow: 0 0.5rem 1rem rgba(25, 152, 251, 0.6) !important;
+}
+.card3:hover {
+  box-shadow: 0 0.5rem 1rem rgba(167, 0, 255, 0.6) !important;
+}
+.card4:hover {
+  box-shadow: 0 0.5rem 1rem rgba(108, 211, 51, 0.6) !important;
 }
 
 .card-image {
