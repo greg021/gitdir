@@ -35,23 +35,4 @@ const navSlide = () => {
   });
 };
 
-const btnAnimations = () => {
-  const whoami = document.querySelector(".whoami");
-
-  whoami.addEventListener("mousedown", () => {
-    whoami.style.transform = "translate(3px, 3px)";
-    whoami.style.boxShadow = "none";
-  });
-
-  whoami.addEventListener("mouseup", () => {
-    whoami.style.transform = "none";
-    whoami.style.boxShadow = "3px 3px black";
-  });
-};
-
-const MAIN = () => {
-  navSlide();
-  btnAnimations();
-};
-
-MAIN();
+navSlide();
